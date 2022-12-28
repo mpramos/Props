@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './Header';
 function App() {
+
+  let firstName="Susana"
+  let lastName="Ramirez"
+  let country="Bolivia"
+  // let añoActual=2022
+  // let añoNacimiento=2019
+  // let edad= añoActual-añoNacimiento
+  // console.log(edad);
+  // let estado=edad>=18
+  console.log(estado);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Header 
+    firstName={firstName}
+    lastName={lastName}
+    country={country}
+    // estado={estado}
+    />
+   </>
   );
 }
 
